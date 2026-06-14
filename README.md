@@ -1,4 +1,4 @@
-# TCC 2026 — [Nome do Grupo]
+# TCC 2026 — PANC'S
 **LTP3 + QP3 · CEMIC 2026 · Prof. Rafael Martins Alves**
 
 ---
@@ -7,18 +7,19 @@
 
 | Nome completo | GitHub | Turma |
 |--------------|--------|-------|
-| (nome 1) | @username | 3A |
-| (nome 2) | @username | 3A |
-| (nome 3) | @username | 3A |
+| (Carolinne Alves da Mota) | carolinnealvesdamota-cell | 3C |
+| (Luiz Eduardo de Toledo Aleixo) | luiztoledoaleixo-cell | 3C |
+| (Ana Carolina Carvalho Rodrigues) | anacarolinacarvalhorodrigues-cell | 3C |
 
-**Tema:** (escreva aqui em 1 frase)
+**Tema:** (Desenvolvimento de um site informativo sobre Plantas Alimentícias Não Convencionais (PANC’s).)
 **Tecnologia:** Python + Flask + SQLite
 
 ---
 
 ## 🎯 O que o sistema faz
 
-(Descreva em 2-3 frases o problema que o sistema resolve e para quem)
+(O sistema consiste em um site informativo desenvolvido para divulgar conhecimento sobre as Plantas Alimentícias Não Convencionais (PANC’s). O objetivo é facilitar o acesso da população a informações confiáveis sobre identificação, benefícios e formas de utilização dessas plantas na alimentação do dia a dia.
+O site busca promover educação alimentar e conscientização sobre alternativas sustentáveis e nutritivas presentes na biodiversidade brasileira.)
 
 ---
 
