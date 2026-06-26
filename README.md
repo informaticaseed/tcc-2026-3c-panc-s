@@ -35,15 +35,20 @@ O site busca promover educação alimentar e conscientização sobre alternativa
 ## 📁 Estrutura do projeto
 
 ```
-├── README.md           ← este arquivo
-├── BACKLOG.md          ← resumo fixo do MVP e links
-├── docs/
-│   ├── arquitetura.md  ← diagrama de arquitetura
-│   └── decisoes/       ← registros de decisão técnica (ADR)
-├── diagramas/          ← imagens e diagramas
-├── evidencias/         ← screenshots das demos
-├── src/                ← código do sistema
-└── tests/              ← testes automáticos
+pancs_site/
+│
+├── app.py              # Arquivo principal do servidor Flask e rotas
+├── pancs_data.py       # Arquivo com os dados das PANCs (aquele dicionário)
+├── requirements.txt    # Dependências do projeto (Flask, pytest, etc.)
+├── vercel.json         # Configuração de deploy para a Vercel
+│
+├── static/             # Pasta para arquivos que o navegador baixa direto
+│   ├── css/            # Arquivos de estilização (.css)
+│   └── imagens/        # Fotos e ilustrações das plantas
+│
+└── templates/          # Páginas HTML que o Flask renderiza
+    ├── index.html      # Página inicial (Lista de plantas)
+    └── detalhe.html    # Página com os detalhes de cada planta
 ```
 
 ---
