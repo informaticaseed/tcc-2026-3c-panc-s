@@ -61,4 +61,4 @@ python src/app.py
 # Rodar os testes
 pytest tests/ -v
 ```
- 
+  
