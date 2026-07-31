@@ -16,7 +16,7 @@
 
 | # | Funcionalidade | Prioridade | Status |
 |---|---------------|-----------|--------|
-| 1 | Relatório bimestral na semana 08 no dia 31/07 | Alta | Feito |
+| 1 | Relatório bimestral da semana 08 dia 31/07/2026 | Alta | Feito |
 | 2 | (escreva aqui) | Alta | ⏳ A fazer |
 | 3 | (escreva aqui) | Alta | ⏳ A fazer |
 | 4 | (escreva aqui) | Média | ⏳ A fazer |
