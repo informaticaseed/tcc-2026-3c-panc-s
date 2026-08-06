@@ -1,6 +1,6 @@
 # Acompanhamento Quinzenal — Prof. Rafael
-**Grupo:** [Nome do Grupo]
-**Turma:** 3A / 3B / 3C
+**Grupo:** Panc's
+**Turma:**  3C
 **Repositório:** [link]
 
 ---
@@ -11,9 +11,14 @@
 
 | Integrante | O que se comprometeu a fazer |
 |-----------|------------------------------|
-| (nome 1) | |
-| (nome 2) | |
-| (nome 3) | |
+| Carolinne | - Passar para o formato do TCC da escola; |
+| Ana Carolina | - Tabela de requisitos, - diagrama de caso de uso; |
+| Luiz Toledo | - Resolver o problema do frontend - Implementar o frontend e backend do forum |
+
+Backlog:
+- Resolver o problema do frontend
+- Implementar o frontend e backend do forum
+- Relatório: passar para o formato do TCC da escola; tabela de requisitos, diagrama de caso de uso; diagrama relacional (banco de dados); metodologia
 
 ### Verificação em 08/08
 
