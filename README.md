@@ -63,6 +63,7 @@ git clone <URL>
 pip install -r requirements.txt
 python src/app.py
 
+
 # Rodar os testes
 pytest tests/ -v
 ```
