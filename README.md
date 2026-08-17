@@ -4,6 +4,7 @@
 ---
 
 
+
 ## 👥 Integrantes
 
 | Nome completo | GitHub | Turma |
@@ -68,4 +69,8 @@ python src/app.py
 # Rodar os testes
 pytest tests/ -v
 ```
+
+
+
+
 
