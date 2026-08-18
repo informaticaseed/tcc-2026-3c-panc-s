@@ -35,13 +35,13 @@ Backlog:
 
 ## Quinzena 2 — 10/08 a 22/08
 
-### Compromissos assumidos em 10/08
+### Compromissos assumidos em 18/08
 
 | Integrante | O que se comprometeu a fazer |
 |-----------|------------------------------|
-| (nome 1) | |
-| (nome 2) | |
-| (nome 3) | |
+| Carolinne | - Passar para o formato do TCC da escola; |
+| Ana Carolina | - Tabela de requisitos, - diagrama de caso de uso; |
+| Luiz Toledo | - Resolver o problema do frontend - Implementar o frontend e backend do forum |
 
 ### Verificação em 22/08
 
