@@ -12,7 +12,7 @@
 | Integrante | O que se comprometeu a fazer |
 |-----------|------------------------------|
 | Carolinne | - Passar para o formato do TCC da escola; |
-| Ana Carolina | - Tabela de requisitos, - diagrama de caso de uso; |
+| Ana Carolina | - Tabela de requisitos, - diagrama de caso de uso; - Metodologia |
 | Luiz Toledo | - Resolver o problema do frontend - Implementar o frontend e backend do forum |
 
 Backlog:
@@ -40,7 +40,7 @@ Backlog:
 | Integrante | O que se comprometeu a fazer |
 |-----------|------------------------------|
 | Carolinne | - Passar para o formato do TCC da escola; |
-| Ana Carolina | - Tabela de requisitos, - diagrama de caso de uso; |
+| Ana Carolina | - Tabela de requisitos, - diagrama de caso de uso; -Metodologia |
 | Luiz Toledo | - Resolver o problema do frontend - Implementar o frontend e backend do forum |
 
 ### Verificação em 22/08
