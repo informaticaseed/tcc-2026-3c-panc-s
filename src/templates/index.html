@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}PANCtando{% endblock %}
+
+{% block conteudo %}
+    <h1>Conheça as PANCs</h1>
+    <p>
+        As PANCs (Plantas Alimentícias Não Convencionais) são plantas
+        nutritivas e sustentáveis que fazem parte da biodiversidade
+        brasileira, mas que pouca gente conhece ou sabe usar na cozinha.
+    </p>
+
+    <div class="grade-plantas">
+        {% for panc in pancs %}
+        <a class="cartao-planta" href="{{ url_for('detalhe', panc_id=panc.id) }}">
+            <h2>{{ panc.nome_popular }}</h2>
+            <p class="nome-cientifico">{{ panc.nome_cientifico }}</p>
+            <p>{{ panc.descricao }}</p>
+        </a>
+        {% endfor %}
+    </div>
+{% endblock %}

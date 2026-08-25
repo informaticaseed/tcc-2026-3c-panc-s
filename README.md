@@ -9,9 +9,7 @@
 
 | Nome completo | GitHub | Turma |
 |--------------|--------|-------|
-| (Carolinne Alves da Mota) | carolinnealvesdamota-cell | 3C |
-| (Luiz Eduardo de Toledo Aleixo) | luiztoledoaleixo-cell | 3C |
-| (Ana Carolina Carvalho Rodrigues) | anacarolinacarvalhorodrigues-cell | 3C |
+| (Ana Carolina Carvalho Rodrigues) | anacarolrodrigues08-hue | 3C |
 
 **Tema:** (Desenvolvimento de um site informativo sobre Plantas Alimentícias Não Convencionais (PANC’s).)
 **Tecnologia:** Python + Flask + SQLite
@@ -57,14 +55,25 @@ pancs_site/
 
 ## ⚡ Comandos rápidos
 
+**Requisito:** Python 3.9 ou superior.
+
 ```bash
 # Clonar o repositório
 git clone <URL>
+cd tcc-2026-3c-panc-s
+
+# Criar e ativar o ambiente virtual (venv)
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+source .venv/Scripts/activate
+source .venv/bin/activate
+
+# Instalar as dependências
+pip install -r requirements.txt
 
 # Rodar o projeto
-pip install -r requirements.txt
 python src/app.py
-
+# Site disponível em http://127.0.0.1:5000
 
 # Rodar os testes
 pytest tests/ -v
