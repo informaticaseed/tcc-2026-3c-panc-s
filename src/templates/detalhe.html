@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}{{ panc.nome_popular }} — PANC's{% endblock %}
+
+{% block conteudo %}
+    <a class="voltar" href="{{ url_for('index') }}">Voltar para a lista</a>
+
+    <h1>{{ panc.nome_popular }}</h1>
+    <p class="nome-cientifico">{{ panc.nome_cientifico }}</p>
+
+    <p>{{ panc.descricao }}</p>
+
+    <h2>Benefícios</h2>
+    <p>{{ panc.beneficios }}</p>
+
+    <h2>Como consumir</h2>
+    <p>{{ panc.modo_uso }}</p>
+{% endblock %}
