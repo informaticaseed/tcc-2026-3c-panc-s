@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}PANC's{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="topo">
+        <a href="{{ url_for('index') }}" class="logo">PANC's</a>
+        <p class="subtitulo">Plantas Alimentícias Não Convencionais</p>
+
+        <nav class="menu">
+            {% if current_user.is_authenticated %}
+                <span>Olá, {{ current_user.nome }}</span>
+                <a href="{{ url_for('logout') }}">Sair</a>
+            {% else %}
+                <a href="{{ url_for('login') }}">Entrar</a>
+                <a href="{{ url_for('cadastro') }}">Cadastrar</a>
+            {% endif %}
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        {% block conteudo %}{% endblock %}
+    </main>
+
+    <footer class="rodape">
+        <p>TCC 2026 - Turma 3C - CEMI</p>
+    </footer>
+</body>
+</html>
