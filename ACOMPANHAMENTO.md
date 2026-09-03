@@ -39,7 +39,7 @@ Backlog:
 
 | Integrante | O que se comprometeu a fazer |
 |-----------|------------------------------|
-| Carolinne | - Passar para o formato do TCC da escola; |
+| Carolinna | - Passar para o formato do TCC da escola; |
 | Ana Carolina | - Tabela de requisitos, - diagrama de caso de uso; -Metodologia |
 | Luiz Toledo | - Resolver o problema do frontend - Implementar o frontend e backend do forum |
 
@@ -58,13 +58,13 @@ Backlog:
 
 ## Quinzena 3 — 24/08 a 05/09
 
-### Compromissos assumidos em 24/08
+### Compromissos assumidos em 03/09
 
 | Integrante | O que se comprometeu a fazer |
 |-----------|------------------------------|
-| (nome 1) | |
-| (nome 2) | |
-| (nome 3) | |
+| Integrante | O que se comprometeu a fazer |
+|-----------|------------------------------|
+| Carolinna | - Desenvolvimento do Fórum; - Criação do slide  |
 
 ### Verificação em 05/09
 
