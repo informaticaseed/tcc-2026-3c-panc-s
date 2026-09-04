@@ -118,11 +118,13 @@ body {
     margin-top: 0.5rem;
 }
 
-.formulario input {
+.formulario input,
+.formulario textarea {
     padding: 0.5rem;
     border: 1px solid #dbe5db;
     border-radius: 6px;
     font-size: 1rem;
+    font-family: inherit;
 }
 
 .formulario button {
@@ -142,4 +144,41 @@ body {
     border-radius: 6px;
     padding: 0.75rem 1rem;
     margin: 1rem 0;
+}
+
+.botao {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    background: var(--verde);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.topico-item {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #dbe5db;
+}
+
+.topico-item a {
+    color: var(--texto);
+    text-decoration: none;
+}
+
+.topico-item a:hover {
+    text-decoration: underline;
+}
+
+.meta {
+    color: var(--texto-suave);
+    font-size: 0.85rem;
+    margin: 0.25rem 0 0;
+}
+
+.comentario {
+    background: var(--verde-claro);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.75rem;
 }

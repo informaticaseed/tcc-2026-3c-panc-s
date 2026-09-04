@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Forum{% endblock %}
+
+{% block conteudo %}
+    <h1>Forum</h1>
+    <p>Compartilhe receitas, dúvidas e curiosidades sobre PANCs.</p>
+
+    {% if current_user.is_authenticated %}
+        <a class="botao" href="{{ url_for('novo_topico') }}">Novo tópico</a>
+    {% else %}
+        <p><a href="{{ url_for('login') }}">Faça login</a> para criar um tópico.</p>
+    {% endif %}
+
+    <hr>
+
+    {% for topico in topicos %}
+        <div class="topico-item">
+            <a href="{{ url_for('ver_topico', topico_id=topico.id) }}"><strong>{{ topico.titulo }}</strong></a>
+            <p class="meta">
+                por {{ topico.autor.nome }} em {{ topico.data_criacao.strftime('%d/%m/%Y %H:%M') }}
+                &middot; {{ topico.comentarios|length }} comentário(s)
+            </p>
+        </div>
+    {% else %}
+        <p>Nenhum tópico criado ainda. Seja o primeiro!</p>
+    {% endfor %}
+{% endblock %}
