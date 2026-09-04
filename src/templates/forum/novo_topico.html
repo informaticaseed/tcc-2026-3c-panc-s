@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Novo tópico{% endblock %}
+
+{% block conteudo %}
+    <h1>Criar novo tópico</h1>
+
+    <form class="formulario" method="POST">
+        <label for="titulo">Título</label>
+        <input type="text" id="titulo" name="titulo" required>
+
+        <label for="conteudo">Conteúdo</label>
+        <textarea id="conteudo" name="conteudo" rows="6" required></textarea>
+
+        <button type="submit">Publicar</button>
+    </form>
+{% endblock %}

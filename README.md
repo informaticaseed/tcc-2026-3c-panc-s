@@ -35,21 +35,38 @@ O site busca promover educação alimentar e conscientização sobre alternativa
 ## 📁 Estrutura do projeto
 
 ```
-pancs_site/
+tcc-2026-3c-panc-s/
 │
-├── app.py              # Arquivo principal do servidor Flask e rotas
-├── pancs_data.py       # Arquivo com os dados das PANCs (aquele dicionário)
-├── requirements.txt    # Dependências do projeto (Flask, pytest, etc.)
-├── vercel.json         # Configuração de deploy para a Vercel
+├── requirements.txt        # Dependências do projeto (Flask, pytest, etc.)
+├── .env.example             # Modelo do arquivo .env (copie e preencha)
 │
-├── static/             # Pasta para arquivos que o navegador baixa direto
-│   ├── css/            # Arquivos de estilização (.css)
-│   └── imagens/        # Fotos e ilustrações das plantas
-│
-└── templates/          # Páginas HTML que o Flask renderiza
-    ├── index.html      # Página inicial (Lista de plantas)
-    └── detalhe.html    # Página com os detalhes de cada planta
+└── src/
+    ├── app.py               # Arquivo principal do servidor Flask e rotas
+    ├── models.py            # Tabelas do banco: Usuario, Topico, Comentario
+    ├── pancs_data.py        # Dados das PANCs (dicionário fixo)
+    │
+    ├── static/
+    │   └── css/style.css    # Estilização (.css)
+    │
+    └── templates/           # Páginas HTML que o Flask renderiza
+        ├── base.html            # Layout comum (menu, rodapé)
+        ├── index.html           # Página inicial (lista de plantas)
+        ├── detalhe.html         # Detalhes de cada planta
+        ├── login.html
+        ├── cadastro.html
+        └── forum/
+            ├── lista.html       # Lista de tópicos do fórum
+            ├── novo_topico.html
+            └── topico.html      # Tópico + comentários
 ```
+
+---
+
+## 🌱 Funcionalidades
+
+- **Catálogo de PANCs** — lista e página de detalhe de cada planta (não exige login)
+- **Cadastro e login de usuários** — senha guardada com hash, nunca em texto puro
+- **Fórum** — qualquer pessoa pode ler os tópicos; criar tópico e comentar exige login
 
 ---
 
@@ -71,6 +88,9 @@ source .venv/bin/activate
 # Instalar as dependências
 pip install -r requirements.txt
 
+# Criar o arquivo .env (copie o modelo e preencha o SECRET_KEY)
+cp .env.example .env
+
 # Rodar o projeto
 python src/app.py
 # Site disponível em http://127.0.0.1:5000
@@ -79,7 +99,10 @@ python src/app.py
 pytest tests/ -v
 ```
 
+O banco de dados (`panc.db`, SQLite) é criado automaticamente na primeira vez que o site roda.
 
+---
 
+## Ver online
 
-
+O site (https://anacarol.pythonanywhere.com) fica hospedado gratuitamente no **PythonAnywhere**, que usa o mesmo SQLite do desenvolvimento.

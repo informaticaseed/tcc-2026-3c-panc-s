@@ -14,7 +14,7 @@ from flask_login import (
     logout_user,
 )
 
-from models import Usuario, db
+from models import Comentario, Topico, Usuario, db
 from pancs_data import buscar_panc, listar_pancs
 
 load_dotenv()
@@ -96,6 +96,50 @@ def login():
 def logout():
     logout_user()
     return redirect(url_for("index"))
+
+
+@app.route("/forum")
+def forum():
+    topicos = Topico.query.order_by(Topico.data_criacao.desc()).all()
+    return render_template("forum/lista.html", topicos=topicos)
+
+
+@app.route("/forum/novo", methods=["GET", "POST"])
+@login_required
+def novo_topico():
+    if request.method == "POST":
+        titulo = request.form.get("titulo", "").strip()
+        conteudo = request.form.get("conteudo", "").strip()
+
+        topico = Topico(titulo=titulo, conteudo=conteudo, usuario_id=current_user.id)
+        db.session.add(topico)
+        db.session.commit()
+
+        return redirect(url_for("ver_topico", topico_id=topico.id))
+
+    return render_template("forum/novo_topico.html")
+
+
+@app.route("/forum/<int:topico_id>", methods=["GET", "POST"])
+def ver_topico(topico_id):
+    topico = Topico.query.get_or_404(topico_id)
+
+    if request.method == "POST":
+        if not current_user.is_authenticated:
+            flash("Faça login para comentar.")
+            return redirect(url_for("login"))
+
+        texto = request.form.get("texto", "").strip()
+        if texto:
+            comentario = Comentario(
+                texto=texto, usuario_id=current_user.id, topico_id=topico.id
+            )
+            db.session.add(comentario)
+            db.session.commit()
+
+        return redirect(url_for("ver_topico", topico_id=topico.id))
+
+    return render_template("forum/topico.html", topico=topico)
 
 
 with app.app_context():

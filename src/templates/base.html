@@ -12,6 +12,7 @@
         <p class="subtitulo">Plantas Alimentícias Não Convencionais</p>
 
         <nav class="menu">
+            <a href="{{ url_for('forum') }}">Forum</a>
             {% if current_user.is_authenticated %}
                 <span>Olá, {{ current_user.nome }}</span>
                 <a href="{{ url_for('logout') }}">Sair</a>
@@ -27,7 +28,7 @@
     </main>
 
     <footer class="rodape">
-        <p>TCC 2026 - Turma 3C - CEMI</p>
+        <p>TCC 2026 - Turma 3C - CEMIC</p>
     </footer>
 </body>
 </html>
