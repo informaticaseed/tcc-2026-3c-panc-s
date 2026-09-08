@@ -39,4 +39,4 @@ Perguntas abertas
 13.	Você considera importante divulgar informações sobre PANCs? Por quê?
 11 e 5 foram deletadas.
 As perguntas abertas viraram objetivas exceto a 13. A questão 13 é uma pergunta de avaliação e dividida em 2 questões, aumentando o questionário para 14 perguntas.
-   	
+   	Comparar resultados do questionário com resultados de outras pesquisar e colocar na metodologia.
