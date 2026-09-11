@@ -25,7 +25,7 @@ cada uma, incluindo fórum para discursões entre usuários.
 | 5 | Cadastro e login de usuários | Média | ✅ Feito |
 | 6 | Fórum para troca de experiências entre usuários | Média | ✅ A fazer |
 | 7 | Busca por nome na lista de PANCs | Baixa | ⏳ A fazer |
-| 8 | criacao de slide |
+| 8 | criação de slide |
 Status conforme avança: ⏳ A fazer → 🔄 Fazendo → ✅ Feito
 
 ---
@@ -45,3 +45,4 @@ Status conforme avança: ⏳ A fazer → 🔄 Fazendo → ✅ Feito
 - **Pull Requests:** [link dos PRs]
 - **Painel do professor:** [link do GitHub Project]
 - **Diagrama de arquitetura:** docs/arquitetura.md
+- 
