@@ -24,8 +24,7 @@ cada uma, incluindo fórum para discursões entre usuários.
 | 4 | Migrar dados para um banco de dados (SQLite) | Alta | ✅ Feito |
 | 5 | Cadastro e login de usuários | Média | ✅ Feito |
 | 6 | Fórum para troca de experiências entre usuários | Média | ✅ A fazer |
-| 7 | Busca por nome na lista de PANCs | Baixa | ⏳ A fazer |
-| 8 | criação de slide |
+| 7 | criação de slide |
 Status conforme avança: ⏳ A fazer → 🔄 Fazendo → ✅ Feito
 
 ---
