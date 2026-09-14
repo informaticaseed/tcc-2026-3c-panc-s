@@ -38,7 +38,7 @@ O site busca promover educação alimentar e conscientização sobre alternativa
 tcc-2026-3c-panc-s/
 │
 ├── requirements.txt        # Dependências do projeto (Flask, pytest, etc.)
-├── .env.example             # Modelo do arquivo .env (copie e preencha)
+├── .env.example             # Modelo do arquivo .env
 │
 └── src/
     ├── app.py               # Arquivo principal do servidor Flask e rotas
@@ -47,6 +47,7 @@ tcc-2026-3c-panc-s/
     │
     ├── static/
     │   └── css/style.css    # Estilização (.css)
+    │   └── imagens/         # Onde ficam as imagens usadas no site
     │
     └── templates/           # Páginas HTML que o Flask renderiza
         ├── base.html            # Layout comum (menu, rodapé)
@@ -64,9 +65,12 @@ tcc-2026-3c-panc-s/
 
 ## 🌱 Funcionalidades
 
-- **Catálogo de PANCs** — lista e página de detalhe de cada planta (não exige login)
-- **Cadastro e login de usuários** — senha guardada com hash, nunca em texto puro
-- **Fórum** — qualquer pessoa pode ler os tópicos; criar tópico e comentar exige login
+- **Catálogo de PANCs**
+   Lista e página de detalhe de cada planta (não exige login)
+- **Cadastro e login de usuários** 
+   Senha guardada com hash, nunca em texto puro
+- **Fórum** 
+   Qualquer pessoa pode ler os tópicos; criar tópico e comentar exige login
 
 ---
 
@@ -87,8 +91,6 @@ source .venv/bin/activate
 
 # Instalar as dependências
 pip install -r requirements.txt
-
-# Criar o arquivo .env (copie o modelo e preencha o SECRET_KEY)
 cp .env.example .env
 
 # Rodar o projeto

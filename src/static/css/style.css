@@ -3,6 +3,8 @@
     --verde-claro: #eaf4ea;
     --texto: #23291f;
     --texto-suave: #5a6455;
+    --aviso-fundo: #fff6e0;
+    --aviso-borda: #e8b84b;
 }
 
 * {
@@ -17,7 +19,10 @@ body {
 }
 
 .topo {
-    background: var(--verde);
+    background-color: var(--verde);
+    background-image: url('../imagens/pancs-banner_2.svg');
+    background-size: cover;
+    background-position: center bottom;
     color: #fff;
     padding: 1.5rem 1rem;
     text-align: center;
@@ -67,6 +72,47 @@ body {
 .cartao-planta h2 {
     margin: 0 0 0.25rem;
     color: var(--verde);
+}
+
+.foto-planta {
+    display: block;
+    width: calc(100% + 2rem);
+    height: 160px;
+    object-fit: cover;
+    margin: -1rem -1rem 0.75rem;
+    border-radius: 8px 8px 0 0;
+}
+
+.foto-planta-detalhe {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.credito-foto {
+    font-size: 0.8rem;
+    color: var(--texto-suave);
+    margin: 0.25rem 0 0;
+}
+
+.credito-foto a {
+    color: var(--texto-suave);
+}
+
+.aviso-preparo {
+    background: var(--aviso-fundo);
+    border: 1px solid var(--aviso-borda);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    margin: 1rem 0;
+}
+
+.aviso-preparo p {
+    margin: 0.25rem 0 0;
 }
 
 .nome-cientifico {

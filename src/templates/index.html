@@ -13,7 +13,11 @@
     <div class="grade-plantas">
         {% for panc in pancs %}
         <a class="cartao-planta" href="{{ url_for('detalhe', panc_id=panc.id) }}">
-            <h2>{{ panc.nome_popular }}</h2>
+            <img class="foto-planta" src="{{ url_for('static', filename='imagens/' + panc.imagem) }}" alt="{{ panc.nome_popular }}">
+            <h2>
+                {{ panc.nome_popular }}
+                {% if panc.precisa_preparo %}<span title="Precisa de preparo antes de consumir">⚠️</span>{% endif %}
+            </h2>
             <p class="nome-cientifico">{{ panc.nome_cientifico }}</p>
             <p>{{ panc.descricao }}</p>
         </a>

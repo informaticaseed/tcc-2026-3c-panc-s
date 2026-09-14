@@ -8,7 +8,19 @@
     <h1>{{ panc.nome_popular }}</h1>
     <p class="nome-cientifico">{{ panc.nome_cientifico }}</p>
 
+    <img class="foto-planta-detalhe" src="{{ url_for('static', filename='imagens/' + panc.imagem) }}" alt="{{ panc.nome_popular }}">
+    <p class="credito-foto">
+        Foto: <a href="{{ panc.fonte_imagem }}">{{ panc.credito_imagem }}</a>
+    </p>
+
     <p>{{ panc.descricao }}</p>
+
+    {% if panc.precisa_preparo %}
+        <div class="aviso-preparo">
+            <strong>⚠️ Atenção antes de consumir:</strong>
+            <p>{{ panc.aviso_preparo }}</p>
+        </div>
+    {% endif %}
 
     <h2>Benefícios</h2>
     <p>{{ panc.beneficios }}</p>
