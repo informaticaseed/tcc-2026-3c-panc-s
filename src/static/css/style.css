@@ -20,11 +20,18 @@ body {
 
 .topo {
     background-color: var(--verde);
-    background-image: url('../imagens/pancs-banner_2.svg');
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.363), rgba(255, 255, 255, 0.223)),
+        url('../imagens/pancs-banner_2.svg');
     background-size: cover;
     background-position: center bottom;
-    color: #fff;
+    color: var(--verde);
     padding: 1.5rem 1rem;
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
@@ -35,9 +42,16 @@ body {
     font-weight: 700;
 }
 
+.logo-img {
+    display: inline-block;
+    height: 120px;
+    width: auto;
+    vertical-align: middle;
+}
+
 .subtitulo {
     margin: 0.25rem 0 0;
-    opacity: 0.9;
+    font-weight: 600;
 }
 
 .conteudo {
@@ -148,7 +162,8 @@ body {
 }
 
 .menu a {
-    color: #fff;
+    color: var(--verde);
+    font-weight: 600;
     text-decoration: underline;
 }
 

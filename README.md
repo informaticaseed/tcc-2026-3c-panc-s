@@ -86,8 +86,6 @@ cd tcc-2026-3c-panc-s
 # Criar e ativar o ambiente virtual (venv)
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-source .venv/Scripts/activate
-source .venv/bin/activate
 
 # Instalar as dependências
 pip install -r requirements.txt
